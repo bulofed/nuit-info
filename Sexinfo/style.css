@@ -24,10 +24,13 @@
 
     --fw-regular: 400;
     --fw-bold: 700;
+    --fw-extrabold: 800;
 
     --fs-400: 1rem;
-    --fs-500: 2.5rem;
-    --fs-600: 3.5rem;
+    --fs-500: 1.5rem;
+    --fs-600: 2rem;
+    --fs-700: 3rem;
+    --fs-800: 6rem;
 }
 
 /* Reset */
@@ -85,3 +88,61 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* General styles */
 
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-400);
+    background-color: var(--light-yellow);
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 5rem;
+    padding-top: 2.5rem;
+}
+
+.container-title .title {
+    font-size: var(--fs-800);
+    font-weight: var(--fw-extrabold);
+}
+
+.container-title .subtitle {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
+}
+
+.container-stickers {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30rem;
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.container-button .button-start {
+    margin: 0 auto;
+    border: none;
+    border-radius: 100vmax;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-extrabold);
+    font-size: var(--fs-700);
+    padding: 1rem 2rem;
+    transition: .3s;
+    overflow: hidden;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.container-button .button-start:is(:hover, :focus) {
+    transform: scale(1.1);
+}
