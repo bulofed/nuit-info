@@ -2,9 +2,32 @@
 
 :root {
 
-    --clr-neutral-100: hsl(0, 0%, 100%);
-    --clr-neutral-900: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --yellow: hsl(34, 100%, 58%);
+    --light-yellow: hsl(36, 100%, 63%);
+    --purple: hsl(277, 100%, 58%);
+    --light-purple: hsl(284, 100%, 63%);
+    --rose: hsl(338, 100%, 66%);
+    --light-rose: hsl(0, 100%, 76%);
+    --blue: hsl(212, 100%, 58%);
+    --light-blue: hsl(205, 100%, 63%);
+    --green: hsl(140, 82%, 53%);
+    --light-green: hsl(137, 100%, 63%);
+    --orange: hsl(14, 100%, 58%);
+    --light-orange: hsl(25, 100%, 63%);
+    --red: hsl(0, 100%, 63%);
+    --light-red: hsl(0, 100%, 72%);
 
+    --ff-body: 'HK Grotesk', sans-serif;
+    --ff-accent: 'Monument Extended', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-400: 1rem;
+    --fs-500: 2.5rem;
+    --fs-600: 3.5rem;
 }
 
 /* Reset */
@@ -55,6 +78,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* 9. Create a root stacking context */
+
 #root, #__next {
     isolation: isolate;
 }
