@@ -228,12 +228,12 @@ body {
     list-style: none;
 
 }
-.background
+#choix .background
 {
     background-color: black;
 }
 
-li ul
+#choix li ul
 {
     padding: 0px;
 }
