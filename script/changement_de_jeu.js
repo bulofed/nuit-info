@@ -8,14 +8,52 @@ $(document).ready(function() {
     });
 
     $(".button_paires").click(function(){
-        alert("Choix du jeux paires")
+        if ($("#paires").hasClass("inactive"))
+        {
+            if ($("body").hasClass("Byellow"))
+            {
+                $("body").removeClass("Byellow").addClass("Bblue");
+                $("#Main_circle").removeClass("C_yellow").addClass("C_blue")
+                $("#paires").removeClass("inactive").addClass("active")
+            }
+            if ($("body").hasClass("Bpink"))
+            {
+                $("body").removeClass("Bpink").addClass("Bblue");
+                $("#Main_circle").removeClass("C_pink").addClass("C_blue")
+                $("#paires").removeClass("inactive").addClass("active")
+            }
+        }
     });
 
     $(".button_puzzle").click(function(){
-        alert("Choix du jeux puzzle")
+        if ($("#puzzle").hasClass("inactive"))
+        {
+            if ($("body").hasClass("Byellow"))
+            {
+                $("body").removeClass("Byellow").addClass("Bgreen");
+                $("#Main_circle").removeClass("C_yellow").addClass("C_green")
+            }
+            if ($("body").hasClass("Bblue"))
+            {
+                $("body").removeClass("Bblue").addClass("Bgreen");
+                $("#Main_circle").removeClass("C_blue").addClass("C_green")
+            }
+        }
     });
 
     $(".button_labyrinthe").click(function(){
-        alert("Choix du jeux labyrinthe")
+        if ($("#labyrinthe").hasClass("inactive"))
+        {
+            if ($("body").hasClass("Byellow"))
+            {
+                $("body").removeClass("Byellow").addClass("Bpink");
+                $("#Main_circle").removeClass("C_yellow").addClass("C_pink")
+            }
+            if ($("body").hasClass("Bblue"))
+            {
+                $("body").removeClass("Bblue").addClass("Bpink");
+                $("#Main_circle").removeClass("C_blue").addClass("C_pink")
+            }
+        }
     });
 });

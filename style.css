@@ -13,6 +13,8 @@
     --light-blue: hsl(205, 100%, 63%);
     --red: hsl(0, 100%, 63%);
     --light-red: hsl(0, 100%, 72%);
+    --green : hsl(140, 82%, 53%);
+    --light-green : hsl(137, 100%, 63%);
 
     --ff-body: 'HK Grotesk', sans-serif;
     --ff-accent: 'Monument Extended', sans-serif;
@@ -88,7 +90,6 @@ body {
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
-    background-color: var(--light-yellow);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -96,6 +97,18 @@ body {
     -ms-user-select: none;
     user-select: none;
     overflow: hidden;
+}
+
+.Byellow{
+    background-color: var(--light-yellow);
+}
+
+.Bgreen{
+    background-color: var(--light-green);
+}
+
+.Bblue{
+    background-color: var(--light-blue);
 }
 
 .container-title {
@@ -202,7 +215,18 @@ body {
     width: 50vh;
     height: 50vh;
     border-radius: 50%;
+}
+
+.C_yellow > *{
     background: var(--yellow);
+}
+
+.C_blue > * {
+    background: var(--blue);
+}
+
+.C_green > *{
+    background: var(--green);
 }
 
 .expli-memory {
@@ -220,7 +244,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
@@ -246,7 +270,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: white;
-    width: 250px;
+    width: 260px;
     height: 200px;
     list-style: none;
 
