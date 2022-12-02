@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"> 
     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
     <title>MST Info</title>
@@ -29,21 +31,30 @@
             <div class="circle"></div>
             <div class="circle"></div>
         </section>
-        <section class="title">
-            <div class="container-title">
-                <h1 class="title">Sex Info</h1>
-                <h2 class="subtitle">La prévention par le jeu</h2>
-            </div>
-        </section>
-        <section class="stickers">
-            <div class="container-stickers">
-                <img class="sticker eggplant-sticker" src="images/eggplant.png" />
-                <img class="sticker peach-sticker" src="images/peach.png" />
-            </div>
-        </section>
-        <section class="container-button">
-            <button type="button" class="button-start">Commencer</button>
-        </section>
+        <div id="Accueil" class="active">
+            <section class="title">
+                <div class="container-title">
+                    <h1 class="title">Sex Info</h1>
+                    <h2 class="subtitle">La prévention par le jeu</h2>
+                </div>
+            </section>
+            <section class="stickers">
+                <div class="container-stickers">
+                    <img class="sticker eggplant-sticker" src="images/eggplant.png" />
+                    <img class="sticker peach-sticker" src="images/peach.png" />
+                </div>
+            </section>
+            <section class="container-button">
+                <button type="button" class="button-start">Commencer</button>
+            </section>
+        </div>
+        <div id="choix" class="inactive">
+            <li class="background">
+                <ul><a href="https://www.google.fr/">Jeux des paires</a></ul>
+                <ul><a href="https://www.google.fr/">Jeux des puzzle</a></ul>
+                <ul><a href="https://www.google.fr/">Jeux des Labyrinthes</a></ul>
+            </li>
+        </div>
         <section class="expli-memory">
             <div class="presentation-jeu">
                 <h2>Retrouve les paires</h2>

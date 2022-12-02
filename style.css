@@ -205,3 +205,46 @@ body {
     display: none;
 }
 
+/* Changement fait sur la selection des jeux */
+#choix
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: 250px;
+    height: 200px;
+    list-style: none;
+
+}
+.background
+{
+    background-color: black;
+}
+
+li ul
+{
+    padding: 0px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Active et rend inactive une div utiliser avec du JS*/
+.inactive
+{
+    display: none;
+}
+
+.active
+{
+    display: block;
+}
