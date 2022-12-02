@@ -8,6 +8,7 @@ $(document).ready(function() {
     });
 
     $(".button_paires").click(function(){
+        $("#choix").removeClass("active").addClass("inactive")
         if ($("#paires").hasClass("inactive"))
         {
             if ($("body").hasClass("Byellow"))
