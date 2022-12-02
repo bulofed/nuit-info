@@ -6,4 +6,8 @@ $(document).ready(function() {
             $("#choix").removeClass("inactive").addClass("active");
         }
     });
+
+    $(".button_paires").click(function(){
+        
+    })
 });
