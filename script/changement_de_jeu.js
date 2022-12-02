@@ -10,4 +10,12 @@ $(document).ready(function() {
     $(".button_paires").click(function(){
         alert("Choix du jeux paires")
     });
+
+    $(".button_puzzle").click(function(){
+        alert("Choix du jeux puzzle")
+    });
+
+    $(".button_labyrinthe").click(function(){
+        alert("Choix du jeux labyrinthe")
+    });
 });
