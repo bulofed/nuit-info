@@ -246,6 +246,16 @@ body {
     background-color: var(--grey);
     border: var(--white) solid 5px;
     border-radius: 40px;
+    cursor:pointer;
+}
+
+.container-memory .carte-invisible {
+    width: min(13rem, 30vh);
+    aspect-ratio: 1;
+    background-color: var(--grey);
+    border: var(--white) solid 5px;
+    border-radius: 40px;
+    display:hidden;
 }
 
 .container-memory .carte .face {
@@ -255,6 +265,15 @@ body {
     border: var(--white) solid 5px;
     border-radius: 40px;
     display: none;
+}
+
+.container-memory .carte .face-visible {
+    width: min(13rem, 30vh);
+    aspect-ratio: 1;
+    background-color: var(--grey);
+    border: var(--white) solid 5px;
+    border-radius: 40px;
+    display: block;
 }
 
 /* Changement fait sur la selection des jeux */

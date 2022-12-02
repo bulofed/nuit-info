@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script/jquery.js"></script>
-    <script type="text/javascript" src="script/changement_de_jeu.js"></script>
-    <script type="text/javascript" src="script/konami.js"></script>
-    <script type="text/javascript" src="script/script.js"> defer</script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"> 
+    <link href="style.css" rel="stylesheet">
+    <script src="script/jquery.js" type="text/javascript"></script>
+    <script src="script/changement_de_jeu.js" type="text/javascript"></script>
+    <script src="script/konami.js" type="text/javascript"></script>
+    <script src="script/script.js" type="text/javascript"> defer</script>
+    <script src="script/paires.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css" rel="stylesheet"> 
     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
     <title>MST Info</title>
 </head>
 <body class="Byellow">
     <main>
-        <section id="Main_circle" class="bg C_yellow">
+        <section class="bg C_yellow" id="Main_circle">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -33,7 +34,7 @@
             <div class="circle"></div>
             <div class="circle"></div>
         </section>
-        <div id="Accueil" class="active">
+        <div class="active" id="Accueil">
             <section class="title">
                 <div class="container-title">
                     <h1 class="title">Sex Info</h1>
@@ -42,19 +43,19 @@
             </section>
             <section class="stickers">
                 <div class="container-stickers">
-                    <img class="sticker eggplant-sticker" src="images/eggplant.png" />
-                    <img class="sticker peach-sticker" src="images/peach.png" />
+                    <img class="sticker eggplant-sticker" src="images/eggplant.png">
+                    <img class="sticker peach-sticker" src="images/peach.png">
                 </div>
             </section>
             <section class="container-button">
-                <button type="button" class="button-start">Commencer</button>
+                <button class="button-start" type="button">Commencer</button>
             </section>
         </div>
-        <div id="choix" class="inactive">
+        <div class="inactive" id="choix">
             <div class="background">
-                <button type="button" class="button_paires changement_button">Jeux des paires</button>
-                <button type="button" class="button_puzzle changement_button">Jeux des puzzle</button>
-                <button type="button" class="button_labyrinthe changement_button">Jeux des Labyrinthes</button>
+                <button class="button_paires changement_button" type="button">Jeux des paires</button>
+                <button class="button_puzzle changement_button" type="button">Jeux des puzzle</button>
+                <button class="button_labyrinthe changement_button" type="button">Jeux des Labyrinthes</button>
             </div>
         </div>
         <section class="expli-memory">
@@ -62,21 +63,21 @@
                 <h2>Retrouve les paires</h2>
             </div>
         </section>
-        <div id="paires" class="inactive">
+        <div class="inactive" id="paires">
             <section class="memory">
                 <div class="container-memory">
-                    <div class="carte" id="carte-1"><img class="face" id="face-1" src="images/Virus/Virus_bleu.png"/></div>
-                    <div class="carte" id="carte-2"><img class="face" id="face-2" src="images/Virus/Virus_jaune.png"/></div>
-                    <div class="carte" id="carte-3"><img class="face" id="face-3" src="images/Virus/Virus_noir.png"/></div>
-                    <div class="carte" id="carte-4"><img class="face" id="face-4" src="images/Virus/Virus_rouge.png"/></div>
-                    <div class="carte" id="carte-5"><img class="face" id="face-5" src="images/Virus/Virus_noir.png"/></div>
-                    <div class="carte" id="carte-6"><img class="face" id="face-6" src="images/Virus/Virus_vert.png"/></div>
-                    <div class="carte" id="carte-7"><img class="face" id="face-8" src="images/Virus/Virus_violet.png"/></div>
-                    <div class="carte" id="carte-8"><img class="face" id="face-9" src="images/Virus/Virus_rouge.png"/></div>
-                    <div class="carte" id="carte-9"><img class="face" id="face-10" src="images/Virus/Virus_bleu.png"/></div>
-                    <div class="carte" id="carte-10"><img class="face" id="face-11" src="images/Virus/Virus_violet.png"/></div>
-                    <div class="carte" id="carte-11"><img class="face" id="face-12" src="images/Virus/Virus_vert.png"/></div>
-                    <div class="carte" id="carte-12"><img class="face" id="face-13" src="images/Virus/Virus_jaune.png"/></div>
+                    <div class="carte" id="carte-1"><img class="face" id="face-1" src="images/Virus/Virus_bleu.png"></div>
+                    <div class="carte" id="carte-2"><img class="face" id="face-2" src="images/Virus/Virus_jaune.png"></div>
+                    <div class="carte" id="carte-3"><img class="face" id="face-3" src="images/Virus/Virus_noir.png"></div>
+                    <div class="carte" id="carte-4"><img class="face" id="face-4" src="images/Virus/Virus_rouge.png"></div>
+                    <div class="carte" id="carte-5"><img class="face" id="face-5" src="images/Virus/Virus_noir.png"></div>
+                    <div class="carte" id="carte-6"><img class="face" id="face-6" src="images/Virus/Virus_vert.png"></div>
+                    <div class="carte" id="carte-7"><img class="face" id="face-7" src="images/Virus/Virus_violet.png"></div>
+                    <div class="carte" id="carte-8"><img class="face" id="face-8" src="images/Virus/Virus_rouge.png"></div>
+                    <div class="carte" id="carte-9"><img class="face" id="face-9" src="images/Virus/Virus_bleu.png"></div>
+                    <div class="carte" id="carte-10"><img class="face" id="face-10" src="images/Virus/Virus_violet.png"></div>
+                    <div class="carte" id="carte-11"><img class="face" id="face-11" src="images/Virus/Virus_vert.png"></div>
+                    <div class="carte" id="carte-12"><img class="face" id="face-12" src="images/Virus/Virus_jaune.png"></div>
                 </div>
             </section>
         </div>
