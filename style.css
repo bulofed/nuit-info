@@ -291,7 +291,6 @@ body {
     width: 260px;
     height: 200px;
     list-style: none;
-
 }
 #choix .background
 {
@@ -307,6 +306,7 @@ body {
     border-radius: 40px;
     background-color: var(--black);
     transition: .3s;
+    cursor:pointer;
 }
 
 #choix .background .changement_button:hover
