@@ -104,6 +104,7 @@ body {
 }
 
 .container-title {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,14 +124,16 @@ body {
 .container-stickers {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    gap: 30rem;
+    flex-shrink: 1;
+    gap: min(30rem, 30vw);
 }
 
 .container-button {
     display: flex;
     align-items: center;
-    padding: 3rem 0;
+    padding: min(10rem, 10vh) 0;
 }
 
 .container-button .button-start {
@@ -149,13 +152,24 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 40em) {
+    .container-button .button-start {
+        font-size: var(--fs-600);
+        margin: 0 auto;
+    }
+
+    .container-stickers {
+        margin: 5rem auto;
+    }
+}
+
 .container-button .button-start:is(:hover, :focus) {
     transform: scale(1.1);
 }
 
 .sticker {
-    width: 250px;
-    height: 250px;
+    width: min(250px, 25vw);
+    height: min(250px, 25vw);
     transition: .5s;
 }
 
@@ -170,7 +184,7 @@ body {
 .bg {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -182,4 +196,11 @@ body {
     height: 50vh;
     border-radius: 50%;
     background: var(--yellow);
+}
+
+.expli-memory, .memory, .expli-puzzle, .expli-laby, .laby {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
