@@ -4,6 +4,19 @@ $(document).ready(function() {
         {
             $("#Accueil").removeClass("active").addClass("inactive");
             $("#choix").removeClass("inactive").addClass("active");
+            if ($("#Accueil").hasClass("inactive"))
+            {
+                if ($("body").hasClass("Byellow"))
+                {
+                    $("body").removeClass("Byellow").addClass("Bblue");
+                    $("#Main_circle").removeClass("C_yellow").addClass("C_blue")
+                }
+                if ($("body").hasClass("Bpink"))
+                {
+                    $("body").removeClass("Bpink").addClass("Bblue");
+                    $("#Main_circle").removeClass("C_pink").addClass("C_blue")
+                }
+            }
         }
     });
 
@@ -11,10 +24,10 @@ $(document).ready(function() {
         $("#choix").removeClass("active").addClass("inactive")
         if ($("#paires").hasClass("inactive"))
         {
-            if ($("body").hasClass("Byellow"))
+            if ($("body").hasClass("Bblue"))
             {
-                $("body").removeClass("Byellow").addClass("Bblue");
-                $("#Main_circle").removeClass("C_yellow").addClass("C_blue")
+                $("body").removeClass("Bblue").addClass("Bgreen");
+                $("#Main_circle").removeClass("C_blue").addClass("C_green")
                 $("#paires").removeClass("inactive").addClass("active")
             }
             if ($("body").hasClass("Bpink"))
@@ -29,10 +42,10 @@ $(document).ready(function() {
     $(".button_puzzle").click(function(){
         if ($("#puzzle").hasClass("inactive"))
         {
-            if ($("body").hasClass("Byellow"))
+            if ($("body").hasClass("Bblue"))
             {
-                $("body").removeClass("Byellow").addClass("Bgreen");
-                $("#Main_circle").removeClass("C_yellow").addClass("C_green")
+                $("body").removeClass("Bblue").addClass("Bgreen");
+                $("#Main_circle").removeClass("C_blue").addClass("C_green")
             }
             if ($("body").hasClass("Bblue"))
             {
