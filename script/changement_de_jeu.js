@@ -8,6 +8,6 @@ $(document).ready(function() {
     });
 
     $(".button_paires").click(function(){
-        
-    })
+        alert("Choix du jeux paires")
+    });
 });
