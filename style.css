@@ -251,14 +251,22 @@ body {
     list-style: none;
 
 }
+
 #choix .background
 {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#choix li ul
+#choix .background > *
 {
-    padding: 0px;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 30px;
+    font-family: var(--ff-accent);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
 }
 
 /* Changement sur les bouttons de choix des jeux*/
