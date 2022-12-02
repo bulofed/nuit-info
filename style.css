@@ -146,7 +146,6 @@ body {
     pointer-events: auto;
     cursor: pointer;
 }
-
 #secret {
     position: absolute;
     width: 100px;
@@ -226,7 +225,19 @@ body {
     justify-items: center;
 }
 
-.container-memory > * {
+.container-memory-visible {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.container-memory-visible > * {
     width: min(13rem, 30vh);
     aspect-ratio: 1;
     background-color: var(--grey);
@@ -275,6 +286,7 @@ body {
     color: white;
     background-color: black;
     border: none;
+    cursor:pointer;
 }
 
 /* Active et rend inactive une div utiliser avec du JS*/
