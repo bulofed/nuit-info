@@ -270,6 +270,11 @@ body {
     gap: 2rem;
 }
 
+#choix .background-invisible
+{
+    display: none;
+}
+
 #choix .background > *
 {
     width: 20rem;

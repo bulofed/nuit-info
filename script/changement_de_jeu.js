@@ -12,6 +12,12 @@ $(document).ready(function () {
         .removeClass("container-memory")
         .addClass("container-memory-visible");
     }
+
+    if ($("#background").hasClass("background")) {
+      $("#background")
+        .removeClass("background")
+        .addClass("background-invisible");
+    }
   });
 
   $(".button_puzzle").click(function () {
