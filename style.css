@@ -254,15 +254,6 @@ body {
     border-radius: 40px;
 }
 
-.container-memory-visible .carte  {
-    width: min(13rem, 30vh);
-    aspect-ratio: 1;
-    background-color: var(--grey);
-    border: var(--white) solid 5px;
-    border-radius: 40px;
-    display: none;
-}
-
 /* Changement fait sur la selection des jeux */
 #choix
 {
