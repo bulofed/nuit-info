@@ -204,7 +204,7 @@ body {
     background: var(--yellow);
 }
 
-.expli-memory {
+.hidden {
     position: absolute;
     width: 100%;
     height: 100%;
