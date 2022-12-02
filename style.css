@@ -250,6 +250,14 @@ a
     text-decoration: none;
 }
 
+/* Changement sur les bouttons de choix des jeux*/
+.changement_button
+{
+    color: white;
+    background-color: black;
+    border: none;
+}
+
 /* Active et rend inactive une div utiliser avec du JS*/
 .inactive
 {
