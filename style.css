@@ -97,6 +97,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     overflow: hidden;
+    transition: 1s;
 }
 
 .Byellow{
@@ -160,18 +161,6 @@ body {
     cursor: pointer;
 }
 
-#secret {
-    position: absolute;
-    width: 100px;
-    top: 50px;
-    right: 50px;
-    display: none;
-}
-
-.secret {
-    display: block !important;
-}
-
 @media screen and (max-width: 40em) {
     .container-button .button-start {
         font-size: var(--fs-600);
@@ -215,6 +204,7 @@ body {
     width: 50vh;
     height: 50vh;
     border-radius: 50%;
+    transition: 1s;
 }
 
 .C_yellow > *{
@@ -250,12 +240,21 @@ body {
     justify-items: center;
 }
 
-.container-memory > * {
+.container-memory .carte {
     width: min(13rem, 30vh);
     aspect-ratio: 1;
     background-color: var(--grey);
     border: var(--white) solid 5px;
     border-radius: 40px;
+}
+
+.container-memory .carte .face {
+    width: min(13rem, 30vh);
+    aspect-ratio: 1;
+    background-color: var(--grey);
+    border: var(--white) solid 5px;
+    border-radius: 40px;
+    display: none;
 }
 
 /* Changement fait sur la selection des jeux */
@@ -277,12 +276,23 @@ body {
 }
 #choix .background
 {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#choix li ul
+#choix .background .changement_button
 {
-    padding: 0px;
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: 40px;
+    background-color: var(--black);
+    transition: .3s;
+}
+
+#choix .background .changement_button:hover
+{
+    transform: scale(1.1);
 }
 
 /* Changement sur les bouttons de choix des jeux*/
